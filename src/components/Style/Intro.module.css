@@ -1,0 +1,53 @@
+.introWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Расталкивает контент вверх и вниз */
+  align-items: center;
+  min-height: 100vh; /* Растягиваем на всю высоту экрана */
+}
+.introContent {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  text-align: center;
+
+  font-size: 30px;
+}
+.photoIcon {
+  width: 50px;
+  height: 30px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.helloText {
+  color: rgb(184, 184, 184);
+}
+.titleText {
+  font-size: 30px;
+}
+.introWrapper {
+  display: flex;
+  padding-top: 150px;
+}
+.selectedProject {
+  padding-bottom: 250px;
+}
+.buttonProject {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  height: 30px;
+  transition: border 0.2s ease-in-out;
+}
+.buttonProject :hover {
+  border: 1px solid black;
+}
+.buttonProject:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

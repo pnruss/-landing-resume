@@ -1,0 +1,52 @@
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  border-bottom: 1px solid black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  gap: 40px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.centerBlock {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 200px;
+  align-items: center;
+}
+
+.headerNav,
+.headerContact {
+  display: flex;
+  gap: 20px;
+}
+.buttonHeader {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  height: 30px;
+  transition: border 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+.buttonHeader :hover {
+  border: 1px solid black;
+}
+.buttonHeader:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
