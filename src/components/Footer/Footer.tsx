@@ -71,16 +71,13 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className={s.contactMe}>
+          <div className={s.buttonContact}>
             <button
               className={s.contactBtn}
               onClick={() => window.open("https://t.me/pnrusdybov", "_blank")}
             >
               Связаться со мной
             </button>
-          </div>
-
-          <div className={s.buttonContact}>
             <button
               className={s.buttonBack}
               onClick={() =>
