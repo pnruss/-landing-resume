@@ -13,13 +13,14 @@ import ScrollToTop from "./components/scrollToTop";
 
 const App = () => {
   const refs = {
-    projects: useRef(null),
-    about: useRef(null),
-    back: useRef(null),
+    projects: useRef<HTMLDivElement>(null),
+    about: useRef<HTMLDivElement>(null),
+    back: useRef<HTMLDivElement>(null),
   };
 
-  const scrollTo = (ref) => {
-    refs[ref]?.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (refName: keyof typeof refs) => {
+    const sectionRef = refs[refName];
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
