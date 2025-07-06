@@ -1,6 +1,6 @@
 import s from "../Style/Project.module.css";
 import previewManuspect from "../../assets/images/ManuspectIlustration.jpg";
-import previewRsxb from "../../assets/images/RSXBILUSTRATION.jpg";
+import previewRsxb from "../../assets/images/RsxbIlustration.jpg";
 import { useNavigate } from "react-router-dom";
 import type { RefObject } from "react";
 
