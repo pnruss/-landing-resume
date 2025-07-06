@@ -2,8 +2,13 @@ import s from "../Style/Project.module.css";
 import previewManuspect from "../../assets/images/ManuspectIlustration.jpg";
 import previewRsxb from "../../assets/images/RSXBILUSTRATION.jpg";
 import { useNavigate } from "react-router-dom";
+import { RefObject } from "react";
 
-const Project = ({ projectsRef }) => {
+interface ProjectProps {
+  projectsRef: RefObject<HTMLDivElement>;
+}
+
+const Project: React.FC<ProjectProps> = ({ projectsRef }) => {
   const navigate = useNavigate();
 
   const goTostoryManuspect = () => {

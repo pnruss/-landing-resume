@@ -1,7 +1,15 @@
 import { useState } from "react";
 import s from "./Header.module.css";
 
-const Header = ({ scrollToAboutMe, scrollToProjects }) => {
+interface HeaderProps {
+  scrollToAboutMe: () => void;
+  scrollToProjects: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({
+  scrollToAboutMe,
+  scrollToProjects,
+}) => {
   const [copied, setCopied] = useState(false);
   const copyEmail = () => {
     const email = "yura.dybov.45@bk.ru";

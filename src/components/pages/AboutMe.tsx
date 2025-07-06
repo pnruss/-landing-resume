@@ -1,6 +1,12 @@
 import s from "../Style/AboutMe.module.css";
 import image from "../../assets/images/imimage.jpg";
-const AboutMe = ({ aboutRef }) => {
+import { RefObject } from "react";
+
+interface AboutMeProps {
+  aboutRef: RefObject<HTMLDivElement>;
+}
+
+const AboutMe: React.FC<AboutMeProps> = ({ aboutRef }) => {
   return (
     <>
       <div className={s.AboutMeWrapper}>

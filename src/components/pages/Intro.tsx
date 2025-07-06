@@ -1,6 +1,9 @@
 import s from "../Style/Intro.module.css";
+interface IntroProps {
+  scrollToProjects: () => void;
+}
 
-const Intro = ({ scrollToProjects }) => {
+const Intro: React.FC<IntroProps> = ({ scrollToProjects }) => {
   return (
     <>
       <div className={s.introWrapper}>
