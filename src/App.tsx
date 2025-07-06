@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/RSXB" element={<Rsxb />} />
       </Routes>
 
-      <Footer scrollToBack={() => scrollTo("back")} />
+      <Footer />
     </BrowserRouter>
   );
 };

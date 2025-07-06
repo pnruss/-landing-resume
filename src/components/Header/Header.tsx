@@ -34,7 +34,9 @@ const Header: React.FC<HeaderProps> = ({
             <button className={s.buttonHeader} onClick={scrollToProjects}>
               Projects
             </button>
-            <button className={s.buttonHeader}>Skills</button>
+            <button className={s.buttonHeader} onClick={copyEmail}>
+              {copied ? "Скопировано!" : "Copy Mail"}
+            </button>
           </div>
 
           <div className={s.headerContact}>
@@ -50,9 +52,16 @@ const Header: React.FC<HeaderProps> = ({
             >
               Github
             </button>
-
-            <button className={s.buttonHeader} onClick={copyEmail}>
-              {copied ? "Скопировано!" : "Copy Mail"}
+            <button
+              className={s.buttonHeader}
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/yuriy-dybov-91a25b351/",
+                  "_blank"
+                )
+              }
+            >
+              LinkedIn
             </button>
           </div>
         </div>
