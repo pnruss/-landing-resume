@@ -2,7 +2,7 @@ import s from "../Style/Project.module.css";
 import previewManuspect from "../../assets/images/ManuspectIlustration.jpg";
 import previewRsxb from "../../assets/images/RSXBILUSTRATION.jpg";
 import { useNavigate } from "react-router-dom";
-import { RefObject } from "react";
+import type { RefObject } from "react";
 
 interface ProjectProps {
   projectsRef: RefObject<HTMLDivElement>;

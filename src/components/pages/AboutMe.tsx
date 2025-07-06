@@ -1,6 +1,6 @@
 import s from "../Style/AboutMe.module.css";
 import image from "../../assets/images/imimage.jpg";
-import { RefObject } from "react";
+import type { RefObject } from "react";
 
 interface AboutMeProps {
   aboutRef: RefObject<HTMLDivElement>;
