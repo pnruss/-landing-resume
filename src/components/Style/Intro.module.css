@@ -1,9 +1,14 @@
 .introWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Расталкивает контент вверх и вниз */
   align-items: center;
-  min-height: 100vh; /* Растягиваем на всю высоту экрана */
+  height: 800px;
+  min-height: 100%;
+  margin: 0;
+  justify-content: flex-start; /* вместо center */
+  margin-top: 0; /* если нужно */
+  padding-top: 100px; /* если нужно */
+  padding-bottom: 280px;
 }
 .introContent {
   display: flex;
@@ -12,42 +17,49 @@
 .title {
   text-align: center;
 
-  font-size: 30px;
+  font-size: 40px;
 }
-.photoIcon {
-  width: 50px;
-  height: 30px;
-  border-radius: 20%;
-  object-fit: cover;
-}
+
 .helloText {
-  color: rgb(184, 184, 184);
+  color: rgb(116, 116, 116);
+  font-size: 80px;
 }
 .titleText {
-  font-size: 30px;
+  font-size: 40px;
 }
 .introWrapper {
   display: flex;
-  padding-top: 150px;
 }
-.selectedProject {
-  padding-bottom: 250px;
-}
+
 .buttonProject {
-  background-color: #fff;
+  background-color: #ff3939;
   border: none;
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
   border: 1px solid transparent;
-  border-radius: 15px;
-  height: 30px;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+
+  color: #fff;
   transition: border 0.2s ease-in-out;
 }
 .buttonProject :hover {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.textMotto {
+  display: flex;
+  font-size: 25px;
+}
+.selectedProject {
+  padding-top: 50px;
+}
+.buttonProject {
+  transition: all 0.5s ease;
 }
 .buttonProject:hover {
-  border: 1px solid black;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: black;
 }

@@ -1,6 +1,6 @@
 import s from "../Style/Intro.module.css";
 
-const Intro = () => {
+const Intro = ({ scrollToProjects }) => {
   return (
     <>
       <div className={s.introWrapper}>
@@ -13,9 +13,12 @@ const Intro = () => {
             </h1>
           </div>
         </div>
+        <div className={s.textMotto}>
+          <h3>Чистый код. Чёткий интерфейс. Реальные решения.</h3>
+        </div>
         <div className={s.selectedProject}>
-          <button className={s.buttonProject}>
-            Мои проекты <span>↓</span>
+          <button className={s.buttonProject} onClick={scrollToProjects}>
+            Мои проекты
           </button>
         </div>
       </div>

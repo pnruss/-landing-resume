@@ -1,0 +1,91 @@
+.RsxbStory {
+  display: flex;
+  height: 100%;
+
+  gap: 10px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 80px;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  padding-top: 30px;
+  height: 700px;
+  padding-bottom: 50px;
+}
+.title h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1; /* на всякий пожарный */
+}
+.imgWrapper img {
+  height: 700px;
+  padding-right: 60px;
+  padding-bottom: 100px;
+}
+.graph {
+  display: flex;
+  line-height: 30px;
+  gap: 300px;
+}
+
+.contentWrapper {
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+.infoText {
+  font-weight: 600;
+}
+.titlePoints {
+  display: flex;
+  font-size: 30px;
+  font-weight: 800;
+}
+.aboutProject {
+  font-size: 23px;
+}
+.infoPoints {
+  line-height: 35px;
+  padding-top: 10px;
+  font-size: 23px;
+}
+.infoPointsGraph {
+  font-size: 19px;
+}
+.infoPointsUl {
+  font-size: 23px;
+  line-height: 35px;
+}
+.logoManuspect img {
+  width: 400px;
+}
+.logoManuspect {
+  display: flex;
+  justify-content: center;
+}
+.contentWrapper {
+  line-height: 35px;
+}
+.backBtn {
+  background-color: #ff3939;
+  width: 150px;
+  height: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.backBtn:hover {
+  background-color: black;
+}
